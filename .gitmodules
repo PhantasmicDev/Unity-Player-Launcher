@@ -1,0 +1,3 @@
+[submodule "Documentation~/templates/phantasmic-fx"]
+	path = Documentation~/templates/phantasmic-fx
+	url = https://github.com/PhantasmicDev/phantasmic-fx.git

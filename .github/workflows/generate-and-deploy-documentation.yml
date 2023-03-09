@@ -1,0 +1,9 @@
+name: Generate And Deploy Documentation
+
+on:
+  workflow_dispatch:
+  workflow_call:
+
+jobs:
+  call-generate-and-deploy-documentation-workflow:
+    uses: PhantasmicDev/Unity-Package-Workflows/.github/workflows/generate-and-deploy-documentation.yml@main

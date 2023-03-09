@@ -1,0 +1,30 @@
+name: Rename Package
+
+on:
+  workflow_dispatch:
+    inputs:
+      company-name:
+        description: "Company Name"
+        required: true
+      package-name:
+        description: "Package Name"
+        required: true
+        
+  workflow_call:
+    inputs:
+      company-name:
+        type: string
+        required: true
+      package-name:
+        type: string
+        required: true
+
+permissions:
+  contents: write
+     
+jobs:
+  call-rename-workflow:
+    uses: PhantasmicDev/Unity-Package-Template-Workflows/.github/workflows/rename-package.yml@main
+    with:
+      company-name: ${{ inputs.company-name }}
+      package-name: ${{ inputs.package-name }}

@@ -1,0 +1,22 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      release-version:
+        description: "Version"
+        required: true
+      generate-site:
+        description: "Generate Site"
+        default: true
+
+permissions:
+  contents: write
+
+jobs:
+  call-release-workflow:
+    uses: PhantasmicDev/Unity-Package-Template-Workflows/.github/workflows/release.yml@main
+    with:
+      release-version: ${{ inputs.release-version }}
+      generate-site: ${{ inputs.generate-site }}
+      

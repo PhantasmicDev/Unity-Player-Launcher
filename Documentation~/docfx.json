@@ -1,0 +1,88 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "..",
+          "files": [
+            "**.cs"
+          ]
+        }
+      ],
+      "dest": "api",
+      "filter": "filterConfig.yml"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "toc.yml",
+          "index.md",
+          "changelog.md"
+        ]
+      },
+      {
+        "src": "../",
+        "files": [
+          "LICENSE.md",
+          "Third Party Notices.md"
+        ],
+        "dest": "licenses"
+      },
+      {
+        "src": "../",
+        "files": [
+          "CHANGELOG.md"
+        ]
+      },
+      {
+        "src": "manual",
+        "files": [
+          "toc.yml",
+          "*.md"
+        ],
+        "dest": "manual"
+      },
+      {
+        "src": "api",
+        "files": [
+          "toc.yml",
+          "*.yml",
+          "*.md"
+        ],
+        "dest": "api"
+      },
+      {
+        "src": "licenses",
+        "files": [
+          "toc.yml",
+          "*.md"
+        ],
+        "dest": "licenses"
+      }
+    ],
+    "resource": [
+      "resources/**"
+    ],
+    "globalMetadata": {
+      "_appTitle": "Package Template",
+      "_appFooter": "<span>Copyright © PhantasmicDev <br>Generated with <strong>DocFX</strong></span>",
+      "_enableSearch": true
+    },
+    "template": [
+      "default",
+      "templates/phantasmic-fx/darkfx"
+    ],
+    "sitemap": {
+      "changefreq": "weekly"
+    },
+    "xref": [
+      "https://normanderwan.github.io/DocFxForUnity/Unity/xrefmap.yml"
+    ],
+    "xrefService": [
+      "https://xref.docs.microsoft.com/query?uid={uid}"
+    ],
+    "dest": "_site"
+  }
+}
