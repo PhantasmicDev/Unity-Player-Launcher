@@ -1,8 +1,8 @@
 {
-  "name": "PhantasmicDev.PackageTemplate.Editor",
+  "name": "PhantasmicGames.PlayerLauncher.Editor",
   "rootNamespace": "",
   "references": [
-    "PhantasmicDev.PackageTemplate"
+    "PhantasmicGames.PlayerLauncher"
   ],
   "includePlatforms": [
     "Editor"

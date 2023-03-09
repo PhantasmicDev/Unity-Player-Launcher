@@ -66,8 +66,8 @@
       "resources/**"
     ],
     "globalMetadata": {
-      "_appTitle": "Package Template",
-      "_appFooter": "<span>Copyright © PhantasmicDev <br>Generated with <strong>DocFX</strong></span>",
+      "_appTitle": "Player Launcher",
+      "_appFooter": "<span>Copyright © Phantasmic Games <br>Generated with <strong>DocFX</strong></span>",
       "_enableSearch": true
     },
     "template": [

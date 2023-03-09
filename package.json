@@ -1,6 +1,6 @@
 {
-  "name": "com.phantasmicdev.packagetemplate",
+  "name": "com.phantasmicgames.playerlauncher",
   "version": "0.0.0",
-  "displayName": "Package Template",
+  "displayName": "Player Launcher",
   "documentationUrl": "phantasmicdev.github.io/unity-package-template"
 }
