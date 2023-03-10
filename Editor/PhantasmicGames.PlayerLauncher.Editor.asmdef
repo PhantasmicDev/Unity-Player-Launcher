@@ -1,18 +1,18 @@
 {
-  "name": "PhantasmicGames.PlayerLauncher.Editor",
-  "rootNamespace": "",
-  "references": [
-    "PhantasmicGames.PlayerLauncher"
-  ],
-  "includePlatforms": [
-    "Editor"
-  ],
-  "excludePlatforms": [],
-  "allowUnsafeCode": false,
-  "overrideReferences": false,
-  "precompiledReferences": [],
-  "autoReferenced": true,
-  "defineConstraints": [],
-  "versionDefines": [],
-  "noEngineReferences": false
+    "name": "PhantasmicGames.PlayerLauncher.Editor",
+    "rootNamespace": "PhantasmicGames.PlayerLauncherEditor",
+    "references": [
+        "PhantasmicGames.PlayerLauncher"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }
