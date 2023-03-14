@@ -9,7 +9,7 @@ namespace PhantasmicGames.PlayerLauncherEditor
         [MenuItem("File/Launch Player %#&p", false, priority = 221)]
         private static void Launch()
         {
-            var launcher = PlayerLauncherSettings.instance.launcherEntries[EditorUserBuildSettings.selectedBuildTargetGroup];
+            var launcher = PlayerLauncherSettings.GetLauncher(EditorUserBuildSettings.selectedBuildTargetGroup);
             launcher.Launch(EditorUserBuildSettings.activeBuildTarget, playerPath);
         }
         
@@ -20,7 +20,8 @@ namespace PhantasmicGames.PlayerLauncherEditor
                 return false;
 
             var buildTargetGroup = BuildPipeline.GetBuildTargetGroup(EditorUserBuildSettings.activeBuildTarget);
-            return PlayerLauncherSettings.instance.launcherEntries.TryGetLauncher(buildTargetGroup, out var launcher) &&
+            return PlayerLauncherSettings.TryGetLauncher(buildTargetGroup, out var launcher, true) &&
+                   launcher != null &&
                    launcher.CanLaunch(playerPath);
         }
     }
