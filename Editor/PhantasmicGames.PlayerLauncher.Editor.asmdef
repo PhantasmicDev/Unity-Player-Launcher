@@ -1,9 +1,7 @@
 {
     "name": "PhantasmicGames.PlayerLauncher.Editor",
     "rootNamespace": "PhantasmicGames.PlayerLauncherEditor",
-    "references": [
-        "PhantasmicGames.PlayerLauncher"
-    ],
+    "references": [],
     "includePlatforms": [
         "Editor"
     ],
