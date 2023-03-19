@@ -39,8 +39,6 @@ namespace PhantasmicGames.PlayerLauncherEditor
                 }
             }
         }
-        
-        public static PlatformPlayerLauncher GetLauncher(BuildTargetGroup buildTargetGroup) => instance._launchers[buildTargetGroup];
 
         public static void SetLauncher(BuildTargetGroup buildTargetGroup, PlatformPlayerLauncher launcher)
         {
