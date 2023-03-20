@@ -4,7 +4,7 @@ namespace PhantasmicGames.PlayerLauncherEditor
 {
     internal static class Utility
     {
-        public static int GetInheritanceDepth(Type baseType, Type derivedType)
+        private static int GetInheritanceDepth(Type baseType, Type derivedType)
         {
             int depth = 0;
             var currentType = derivedType;
